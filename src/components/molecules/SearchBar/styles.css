@@ -1,0 +1,25 @@
+.container-search-bar {
+  width: 490px;
+  height: 48px;
+
+  & img {
+    width: 24px;
+    height: 24px;
+    position: relative;
+  }
+}
+
+.search-bar {
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  width: 460px;
+  height: 48px;
+  margin-left: -24px;
+}
+
+.search-bar::placeholder {
+  color: #79797a;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}

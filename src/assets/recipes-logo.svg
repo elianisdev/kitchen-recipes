@@ -1,0 +1,8 @@
+<svg width="150" height="48" viewBox="0 0 150 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 10C16 7 18 5 18 5M24 10C24 7 26 5 26 5M32 10C32 7 34 5 34 5" stroke="#54B5BA" stroke-width="2.5" stroke-linecap="round"/>
+<rect x="4" y="16" width="40" height="5" rx="2.5" fill="#0C969D"/>
+<path d="M8 21H40V34C40 39.5228 35.5228 44 30 44H18C12.4772 44 8 39.5228 8 34V21Z" fill="#0C969D"/>
+<rect x="0" y="25" width="6" height="4" rx="2" fill="#0C969D"/>
+<rect x="42" y="25" width="6" height="4" rx="2" fill="#0C969D"/>
+<text x="58" y="33" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="22" font-weight="700" fill="#19191A">Recipes</text>
+</svg>
