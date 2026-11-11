@@ -224,7 +224,9 @@ npm run dev
 
 ### 2. Configure Firestore Rules
 
-In Firebase Console, go to Firestore Database > Rules and add:
+In Firebase Console, go to Firestore Database > Rules.
+
+For local development, allow reads and writes so you can create and edit recipes:
 
 ```javascript
 rules_version = '2';
@@ -236,6 +238,22 @@ service cloud.firestore {
   }
 }
 ```
+
+For a public demo, switch to read-only so nobody can modify or delete your data:
+
+```javascript
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /recipes/{document} {
+      allow read: if true;
+      allow write: if false;
+    }
+  }
+}
+```
+
+> With read-only rules, creating, editing, rating or marking recipes as cooked will show an error in the app. Run `npm run migrate` before switching to read-only if your database is empty.
 
 ### 3. Get Firebase Configuration
 
